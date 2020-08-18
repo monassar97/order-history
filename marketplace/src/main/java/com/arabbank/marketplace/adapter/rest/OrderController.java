@@ -40,6 +40,12 @@ public class OrderController {
                 .build();
     }
 
+    @GetMapping("/hi")
+    public String greeting() {
+        return
+                "Hi";
+    }
+
     private String generateId() {
         Random random = new Random();
         int i = random.nextInt(9000) + 1000;
